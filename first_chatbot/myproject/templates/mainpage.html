@@ -1,0 +1,37 @@
+{% extends "templates\kbase.html" %}
+
+
+{% load static %}
+
+{% block content %}
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+    <body>
+
+
+    <title>Unde Platform</title>
+    <header class="header">
+        <a href="{% url 'mainpage' %}" class="logo-container">
+            <img src="{% static 'media/ilovedogs.png' %}" alt="logo" class="logo">
+        </a>
+
+        <nav class="navbar">
+            <a href="{% url 'mainpage' %}" class="active">Home</a>
+            <a href="{% url 'catalog' %}">Catalog</a>
+            
+        </nav>
+    </header>
+
+    <section class="home">
+        <div class="home-content">
+            <h1>Welcome to iLoveDogs</h1>
+            <h3>Protect your rights with Arnurkify Platform</h3>
+            <div class="btn-box">
+                <a href="chatbot">Chatbot</a>
+                <a href="https://t.me/kzsafely_bot">Telegram</a>
+            </div>
+        </div>
+    </section>
+    {% endblock %}

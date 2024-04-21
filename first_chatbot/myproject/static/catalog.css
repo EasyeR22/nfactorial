@@ -1,0 +1,86 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: white;
+    box-shadow: rgba(77, 77, 77, 0.12) 0px 2px 3px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    padding-bottom: 40px;
+}
+
+.logo{
+    width: 120px;
+    height: auto;
+}
+.header .navbar .signin{
+    color:red;
+}
+.navbar a {
+    font-size: 18px;
+    color: #001a2c;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:35px;
+    transition: .3s;
+}
+
+
+.navbar a:hover, .navbar a.active{
+    color: #195c89;
+}
+
+
+/* Style for the breed list container */
+#breed-list {
+    max-width: 1200px; /* Adjust max-width as needed to make the container wider */
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+}
+
+
+.breed-item {
+    width: calc(25% - 10px); /* Adjust width as needed (4 items per row with spacing) */
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    background-color: aliceblue;
+}
+
+
+.breed-item p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.breed-item img {
+    width: 100%;
+    height: 200px; /* Adjust the height as needed */
+    border-radius: 5px;
+    object-fit: cover; /* Crop the image to fit the container */
+    margin-bottom: 10px;
+}
+
+.breed-item a {
+    color: #195c89;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.breed-item a:hover {
+    text-decoration: none;
+}
